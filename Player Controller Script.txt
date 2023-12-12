@@ -1,0 +1,55 @@
+using UnityEngine; 
+Using System.Collections;
+using UnityEngine;
+
+public Player Controller NewBehaviorScript : Mono Behavior 
+{
+	charactercontroller controller;
+	vector3 Player Velocity;
+	bool groundedPlayer;
+	float player speed = 1.0f;
+	float jumpHeight = 1.0f;
+	float gravity Value = 1.0f;
+	float baseSpeed = 5.0f;
+	float default Speed = 5.0;
+	float dash = 2.0f;
+ }
+	Void Start () {
+		{
+			controller = gameObject.AddComponent<CharacterConroller>90;
+		}
+	if(input.getButtonDown(Keycode.W);
+		{
+			Move Forward;
+		}
+	if(input.getButtonDown(Keycode.A);
+		{
+			Move Left;
+		}
+	if(input.getButtonDown(Keycode.D);
+		{
+			Move Right;
+		}
+	if(input.getButtonDown(Keycode.S);
+		{
+			Move Backward;
+		}
+
+	if(input.getButtonDown(Keycode.Space)
+		{
+			playerVeloctiy +=(jumpheight * 5.0 * gravityValue);
+		}
+
+		playerVelocity.y += gavity value * time.deltaTime;
+		controller.Move(palyerVelocity * time.deltaTime
+		}
+	if(input.getButtonDown(keycode.LeftShift);
+		{
+			currentSpeed = baseSpeed = Dash; 
+		} }
+    	if (Input.GetKeyUp(KeyCode.LeftShift))
+    	{
+       		currentSpeed = defaultSpeed;
+        	isSprinting = false;
+    	}
+}
